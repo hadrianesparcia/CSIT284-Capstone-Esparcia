@@ -60,3 +60,9 @@ class OrdersScreen extends StatelessWidget {
     );
   }
 }
+String _time(DateTime d) {
+  final h = d.hour % 12 == 0 ? 12 : d.hour % 12;
+  final m = d.minute.toString().padLeft(2, '0');
+  final ap = d.hour >= 12 ? 'PM' : 'AM';
+  return '$h:$m $ap';
+}

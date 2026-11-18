@@ -14,6 +14,12 @@ class CanteenApp extends StatelessWidget {
       theme: ThemeData(
         colorSchemeSeed: Colors.deepOrange,
         useMaterial3: true,
+        scaffoldBackgroundColor: const Color(0xFFFFF8F4),
+        appBarTheme: const AppBarTheme(
+          centerTitle: true,
+          backgroundColor: Colors.deepOrange,
+          foregroundColor: Colors.white,
+        ),
       ),
       home: const MenuScreen(),
     );
